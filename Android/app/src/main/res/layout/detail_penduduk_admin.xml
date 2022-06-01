@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <TextView
+        android:id="@+id/text_detail_penduduk_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Detail Data Penduduk"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_profil_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_detail_penduduk_admin"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/text_detail_penduduk_admin"
+        app:layout_constraintTop_toBottomOf="@+id/text_detail_penduduk_admin"
+        app:srcCompat="@drawable/ic_baseline_account_circle_white_24" />
+
+    <TextView
+        android:id="@+id/text_nik_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="NIK                                 :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_profil_user" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_nik_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/nik_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_nik_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/image_profil_user"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_nama_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:text="Nama                            :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_nik_detail_admin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_nama_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:hint="@string/nama_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_nama_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nik_detail_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_ttl_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:text="TTL                                :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_nama_detail_admin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_ttl_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:hint="@string/ttl_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_ttl_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nama_detail_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_jk_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:text="Jenis Kelamin             :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ttl_detail_admin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_jk_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:hint="@string/jk_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_jk_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_ttl_detail_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_agama_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:text="Agama                          :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_jk_detail_admin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_agama_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:hint="@string/agama_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_agama_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_jk_detail_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_pekerjaan_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:text="Pekerjaan                     :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_agama_detail_admin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_pekerjaan_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:hint="@string/pekerjaan_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_pekerjaan_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_agama_detail_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_warga_detail_admin"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:text="Kewarganegaraan      :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pekerjaan_detail_admin" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_warga_detail_admin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:hint="@string/warga_detail_admin"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_warga_detail_admin"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pekerjaan_detail_admin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_edit_penduduk_admin"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_white_round"
+        android:text="Edit Data"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

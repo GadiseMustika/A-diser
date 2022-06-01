@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">A-Diser</string>
+    <string name="nama_profil_user">Nama Lengkap</string>
+    <string name="email_profil_user">Email</string>
+    <string name="nik_profil_user">NIK</string>
+    <string name="nkk_profil_user">Nomor KK</string>
+    <string name="tpenduduk_admin">Orang</string>
+    <string name="surat_admin">Surat</string>
+    <string name="nik_detail_admin">NIK</string>
+    <string name="nama_detail_admin">Nama</string>
+    <string name="ttl_detail_admin">TTL</string>
+    <string name="jk_detail_admin">Jenis Kelamin</string>
+    <string name="agama_detail_admin">Agama</string>
+    <string name="pekerjaan_detail_admin">Pekerjaan</string>
+    <string name="warga_detail_admin">Kewarganegaraan</string>
+    <string name="nomor_surat_admin">Nomor Surat</string>
+    <string name="tpermohonan_surat_admin">Tanggal Permohonan</string>
+    <string name="tselesai_surat_admin">Tanggal Selesai</string>
+</resources>

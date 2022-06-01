@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <TextView
+        android:id="@+id/text_sosial_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Data Sosial"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_proses_admin"
+        android:layout_width="300dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_sub"
+        android:drawableStart="@drawable/ic_baseline_rotate_left_24"
+        android:drawablePadding="-50dp"
+        android:text="Sedang Diproses"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/text_sosial_admin"
+        app:layout_constraintStart_toStartOf="@+id/text_sosial_admin"
+        app:layout_constraintTop_toBottomOf="@+id/text_sosial_admin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_selesai_admin"
+        android:layout_width="303dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_sub"
+        android:drawableStart="@drawable/ic_baseline_done_24"
+        android:drawablePadding="-50dp"
+        android:text="Selesai Diproses"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_proses_admin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_proses_admin"
+        app:layout_constraintTop_toBottomOf="@+id/button_proses_admin" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemIconTint="@color/light_theme"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bawah_admin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
