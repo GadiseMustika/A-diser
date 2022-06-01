@@ -1,4 +1,5 @@
 # /name/node_modules.log
-App/node_modules/
+node_modules/
+node_modules
 package-lock.json
 package.json
