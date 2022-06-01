@@ -22,7 +22,7 @@ db.sequelize.sync();
 // add routes
 require("../App/routes/auth.routes")(app);
 require("../App/routes/user.routes")(app);
-
+require("../App/routes/suratNikah.routes")(app);
 
 
 // set port listen for request
