@@ -3,7 +3,7 @@ import cv2
 
 pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 # Read image with opencv
-image = cv2.imread("images/tes.png")
+image = cv2.imread("images/ktp1.jpg")
 
 # Convert image to gray
 color = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
