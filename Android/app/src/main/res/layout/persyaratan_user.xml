@@ -1,52 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/theme"
+    android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/theme">
 
     <TextView
-        android:id="@+id/text_judul_persyaratan_user"
+        android:id="@+id/txt_persyaratan_user_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="Persyaratan Pengajuan"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_persyaratan_user_bg"
         android:layout_width="240dp"
         android:layout_height="160dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/text_judul_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/txt_persyaratan_user_judul"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/text_judul_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_judul_persyaratan_user"
+        app:layout_constraintStart_toStartOf="@+id/txt_persyaratan_user_judul"
+        app:layout_constraintTop_toBottomOf="@+id/txt_persyaratan_user_judul"
         app:srcCompat="@drawable/button_sub" />
 
     <TextView
-        android:id="@+id/text_foto_persyaratan_user"
+        android:id="@+id/txt_persyaratan_user_ktp"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
-        android:text="Scan Fotocopy KTP"
         android:drawableStart="@drawable/ic_baseline_insert_drive_file_24"
-        android:paddingLeft="10dp"
         android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:text="Scan Fotocopy KTP"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/img_persyaratan_user_bg"
         app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/img_persyaratan_user_bg"
+        app:layout_constraintTop_toTopOf="@+id/img_persyaratan_user_bg" />
 
     <TextView
-        android:id="@+id/text_foto_persyaratan_user2"
+        android:id="@+id/txt_persyaratan_user_latar"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
@@ -56,45 +60,45 @@
         android:text="Scan Foto Latar Biru"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/img_persyaratan_user_bg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/text_foto_persyaratan_user" />
+        app:layout_constraintStart_toStartOf="@+id/img_persyaratan_user_bg"
+        app:layout_constraintTop_toBottomOf="@+id/txt_persyaratan_user_ktp" />
 
     <TextView
-        android:id="@+id/text_foto_persyaratan_user3"
+        android:id="@+id/txt_persyaratan_user_akta"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:drawableStart="@drawable/ic_baseline_insert_drive_file_24"
-        android:paddingLeft="10dp"
         android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
         android:text="Scan Fotocopy Akta"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/img_persyaratan_user_bg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/text_foto_persyaratan_user2" />
+        app:layout_constraintStart_toStartOf="@+id/img_persyaratan_user_bg"
+        app:layout_constraintTop_toBottomOf="@+id/txt_persyaratan_user_latar" />
 
     <TextView
-        android:id="@+id/text_foto_persyaratan_user5"
+        android:id="@+id/txt_persyaratan_user_kk"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:drawableStart="@drawable/ic_baseline_insert_drive_file_24"
-        android:paddingLeft="10dp"
         android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
         android:text="Scan Fotocopy KK"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/img_persyaratan_user_bg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/text_foto_persyaratan_user3" />
+        app:layout_constraintStart_toStartOf="@+id/img_persyaratan_user_bg"
+        app:layout_constraintTop_toBottomOf="@+id/txt_persyaratan_user_akta" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_ktp_persyaratan_user"
+        android:id="@+id/btn_persyaratan_user_ktp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -102,14 +106,14 @@
         android:drawableRight="@drawable/ic_baseline_file_upload_24"
         android:paddingRight="10dp"
         android:text="Upload Scan Fotocopy KTP"
-        android:textColor="@color/grey"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/img_persyaratan_user_bg"
+        app:layout_constraintStart_toStartOf="@+id/img_persyaratan_user_bg"
+        app:layout_constraintTop_toBottomOf="@+id/img_persyaratan_user_bg" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_latar_persyaratan_user"
+        android:id="@+id/btn_persyaratan_user_latar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -117,14 +121,14 @@
         android:drawableRight="@drawable/ic_baseline_file_upload_24"
         android:paddingRight="10dp"
         android:text="Upload Foto Latar Biru"
-        android:textColor="@color/grey"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/button_ktp_persyaratan_user"
-        app:layout_constraintStart_toStartOf="@+id/button_ktp_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/button_ktp_persyaratan_user" />
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/btn_persyaratan_user_ktp"
+        app:layout_constraintStart_toStartOf="@+id/btn_persyaratan_user_ktp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persyaratan_user_ktp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_akta_persyaratan_user"
+        android:id="@+id/btn_persyaratan_user_akta"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -132,14 +136,14 @@
         android:drawableRight="@drawable/ic_baseline_file_upload_24"
         android:paddingRight="10dp"
         android:text="Upload Scan Fotocopy Akta"
-        android:textColor="@color/grey"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/button_latar_persyaratan_user"
-        app:layout_constraintStart_toStartOf="@+id/button_latar_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/button_latar_persyaratan_user" />
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/btn_persyaratan_user_latar"
+        app:layout_constraintStart_toStartOf="@+id/btn_persyaratan_user_latar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persyaratan_user_latar" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_kk_persyaratan_user"
+        android:id="@+id/btn_persyaratan_user_kk"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -147,75 +151,64 @@
         android:drawableRight="@drawable/ic_baseline_file_upload_24"
         android:paddingRight="10dp"
         android:text="Upload Scan Fotocopy KK"
-        android:textColor="@color/grey"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/button_akta_persyaratan_user"
-        app:layout_constraintStart_toStartOf="@+id/button_akta_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/button_akta_persyaratan_user" />
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/btn_persyaratan_user_akta"
+        app:layout_constraintStart_toStartOf="@+id/btn_persyaratan_user_akta"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persyaratan_user_akta" />
 
     <TextView
-        android:id="@+id/text_catatan_persyaratan_user"
+        android:id="@+id/txt_persyaratan_user_catatan"
         android:layout_width="240dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:text="Catatan:"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/button_kk_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/btn_persyaratan_user_kk"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_kk_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/button_kk_persyaratan_user" />
+        app:layout_constraintStart_toStartOf="@+id/btn_persyaratan_user_kk"
+        app:layout_constraintTop_toBottomOf="@+id/btn_persyaratan_user_kk" />
 
     <TextView
-        android:id="@+id/text_catatan1_persyaratan_user"
+        android:id="@+id/txt_persyaratan_user_catatan1"
         android:layout_width="240dp"
         android:layout_height="0dp"
         android:layout_marginTop="0dp"
         android:text="1. Ukuran gambar maksimal 1 Mb"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_catatan_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/txt_persyaratan_user_catatan"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_catatan_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_catatan_persyaratan_user" />
+        app:layout_constraintStart_toStartOf="@+id/txt_persyaratan_user_catatan"
+        app:layout_constraintTop_toBottomOf="@+id/txt_persyaratan_user_catatan" />
 
     <TextView
-        android:id="@+id/text_catatan2_persyaratan_user"
+        android:id="@+id/txt_persyaratan_user_catatan2"
         android:layout_width="240dp"
         android:layout_height="0dp"
         android:layout_marginTop="0dp"
         android:text="2. Gambar memiliki kualitas yang bagus"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_catatan1_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/txt_persyaratan_user_catatan1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_catatan1_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_catatan1_persyaratan_user" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="theme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintStart_toStartOf="@+id/txt_persyaratan_user_catatan1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_persyaratan_user_catatan1" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_login3"
+        android:id="@+id/btn_persyaratan_user_lanjut"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/button_sub_round"
         android:text="Lanjut"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button_kk_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/btn_persyaratan_user_kk"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_kk_persyaratan_user" />
+        app:layout_constraintStart_toStartOf="@+id/btn_persyaratan_user_kk" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1022538801830",
+    "firebase_url": "https://adiser-26e99-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "adiser-26e99",
+    "storage_bucket": "adiser-26e99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022538801830:android:eae6f923b8afe0e4d28a67",
+        "android_client_info": {
+          "package_name": "com.example.adiser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022538801830-8cd9n502e500j58tu189rei6fd16rkv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD4GyXpJE1eqbaQdbWfBoXZ7WkjuqnoLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022538801830-8cd9n502e500j58tu189rei6fd16rkv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

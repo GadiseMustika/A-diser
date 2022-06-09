@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_main_navigation"
+    app:startDestination="@id/adminDashboardFragment">
+
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.example.adiser.adminMainActivity.AdminDashboardFragment"
+        android:label="fragment_admin_dashboard"
+        tools:layout="@layout/dashboard_admin">
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_dataSosialFragment"
+            app:destination="@id/dataSosialFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_dataMasterFragment"
+            app:destination="@id/dataMasterFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataSosialFragment"
+        android:name="com.example.adiser.adminMainActivity.DataSosialFragment"
+        android:label="fragment_data_sosial"
+        tools:layout="@layout/dsosial_admin">
+        <action
+            android:id="@+id/action_dataSosialFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_dataSosialFragment_to_dataMasterFragment"
+            app:destination="@id/dataMasterFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+        <action
+            android:id="@+id/action_dataSosialFragment_to_suratProsesFragment"
+            app:destination="@id/suratProsesFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_dataSosialFragment_to_suratSelesaiFragment"
+            app:destination="@id/suratSelesaiFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataMasterFragment"
+        android:name="com.example.adiser.adminMainActivity.DataMasterFragment"
+        android:label="fragment_data_master"
+        tools:layout="@layout/dmaster_admin">
+        <action
+            android:id="@+id/action_dataMasterFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_dataMasterFragment_to_dataSosialFragment"
+            app:destination="@id/dataSosialFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_dataMasterFragment_to_detailPendudukFragment"
+            app:destination="@id/detailPendudukFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/suratProsesFragment"
+        android:name="com.example.adiser.adminMainActivity.SuratProsesFragment"
+        android:label="fragment_surat_proses"
+        tools:layout="@layout/surat_proses_admin">
+        <action
+            android:id="@+id/action_suratProsesFragment_to_detailSuratFragment"
+            app:destination="@id/detailSuratFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/suratSelesaiFragment"
+        android:name="com.example.adiser.adminMainActivity.SuratSelesaiFragment"
+        android:label="fragment_surat_selesai"
+        tools:layout="@layout/surat_selesai_admin">
+        <action
+            android:id="@+id/action_suratSelesaiFragment_to_detailSuratFragment"
+            app:destination="@id/detailSuratFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailSuratFragment"
+        android:name="com.example.adiser.adminMainActivity.DetailSuratFragment"
+        android:label="fragment_detail_surat"
+        tools:layout="@layout/detail_surat_admin">
+        <action
+            android:id="@+id/action_detailSuratFragment_to_dataSosialFragment"
+            app:destination="@id/dataSosialFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPendudukFragment"
+        android:name="com.example.adiser.adminMainActivity.DetailPendudukFragment"
+        android:label="fragment_detail_penduduk"
+        tools:layout="@layout/detail_penduduk_admin">
+        <action
+            android:id="@+id/action_detailPendudukFragment_to_editPendudukFragment"
+            app:destination="@id/editPendudukFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_detailPendudukFragment_to_dataMasterFragment"
+            app:destination="@id/dataMasterFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPendudukFragment"
+        android:name="com.example.adiser.adminMainActivity.EditPendudukFragment"
+        android:label="fragment_edit_penduduk"
+        tools:layout="@layout/edit_penduduk_admin">
+        <action
+            android:id="@+id/action_editPendudukFragment_to_dataMasterFragment"
+            app:destination="@id/dataMasterFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+
+</navigation>

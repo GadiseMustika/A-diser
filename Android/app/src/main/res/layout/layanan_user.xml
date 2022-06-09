@@ -7,55 +7,87 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_beranda_user"
+        android:id="@+id/txt_layanan_user_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:text="Layanan Surat"
         android:textColor="@color/white"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_layanan_user"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_layanan_user_pindah"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/button_sub"
         android:text="Surat Keterangan Pindah"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/text_beranda_user"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txt_layanan_user_judul"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/text_beranda_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_beranda_user" />
+        app:layout_constraintStart_toStartOf="@+id/txt_layanan_user_judul"
+        app:layout_constraintTop_toBottomOf="@+id/txt_layanan_user_judul" />
 
-    <Button
-        android:id="@+id/button_layanan_user2"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_layanan_user_tmp"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="@drawable/button_sub"
         android:text="Surat Keterangan Tidak Mampu"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/button_layanan_user"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_layanan_user_pindah"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_layanan_user"
-        app:layout_constraintTop_toBottomOf="@+id/button_layanan_user" />
+        app:layout_constraintStart_toStartOf="@+id/btn_layanan_user_pindah"
+        app:layout_constraintTop_toBottomOf="@+id/btn_layanan_user_pindah" />
 
-    <Button
-        android:id="@+id/button_layanan_user3"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_layanan_user_milik"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="@drawable/button_sub"
         android:text="Surat Keterangan Kepemilikan"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/button_layanan_user2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_layanan_user_tmp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_layanan_user2"
-        app:layout_constraintTop_toBottomOf="@+id/button_layanan_user2" />
+        app:layout_constraintStart_toStartOf="@+id/btn_layanan_user_tmp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_layanan_user_tmp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_layanan_user_nikah"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_sub"
+        android:text="Surat Keterangan Nikah"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_layanan_user_milik"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_layanan_user_milik"
+        app:layout_constraintTop_toBottomOf="@+id/btn_layanan_user_milik" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_layanan_user_penghasilan"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_sub"
+        android:text="Surat Keterangan Penghasilan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_layanan_user_nikah"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_layanan_user_nikah"
+        app:layout_constraintTop_toBottomOf="@+id/btn_layanan_user_nikah" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/menu_bawah"

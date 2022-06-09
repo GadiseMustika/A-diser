@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_surat_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sub_theme"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/img_item_surat_user"
+            android:layout_width="75dp"
+            android:layout_height="150dp"
+            android:src="@drawable/file" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_user_nosurat"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:gravity="center|right"
+            android:text="Nomor Surat : "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_user_jenis"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_user_nosurat"
+            android:gravity="center|right"
+            android:text="Jenis Surat   : "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_item_surat_user_status"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_user_jenis"
+            android:gravity="center|right"
+            android:text="Status Surat  : "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_item_surat_user_output_nosurat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/txt_item_surat_user_nosurat"
+            android:gravity="center|left"
+            android:text="Nomor Surat"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_item_surat_user_output_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_user_output_nosurat"
+            android:layout_toRightOf="@+id/txt_item_surat_user_jenis"
+            android:gravity="center|left"
+            android:text="Jenis Surat"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txt_item_surat_user_output_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_user_output_jenis"
+            android:layout_toRightOf="@+id/txt_item_surat_user_status"
+            android:gravity="center|left"
+            android:text="Status Surat"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

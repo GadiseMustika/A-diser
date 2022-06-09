@@ -14,6 +14,18 @@
     <string name="pekerjaan_detail_admin">Pekerjaan</string>
     <string name="warga_detail_admin">Kewarganegaraan</string>
     <string name="nomor_surat_admin">Nomor Surat</string>
+    <string name="jenis_surat_admin">Jenis Surat</string>
     <string name="tpermohonan_surat_admin">Tanggal Permohonan</string>
     <string name="tselesai_surat_admin">Tanggal Selesai</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="logout">Logout</string>
+    <string name="daftar">Daftar</string>
+
+    <string-array name="drop_down_status_array">
+        <item>Sedang Diproses</item>
+        <item>Selesai Diproses</item>
+    </string-array>
+
 </resources>

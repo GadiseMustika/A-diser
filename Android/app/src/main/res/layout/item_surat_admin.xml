@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/theme"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_surat_admin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/img_item_surat_admin"
+            android:layout_width="75dp"
+            android:layout_height="200dp"
+            android:src="@drawable/file" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_nosurat"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:gravity="center|right"
+            android:text="Nomor Surat : "
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_nama"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_admin_nosurat"
+            android:gravity="center|right"
+            android:text="Pengaju         : "
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_nik"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_admin_nama"
+            android:gravity="center|right"
+            android:text="NIK                 : "
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_jenis"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_admin_nik"
+            android:gravity="center|right"
+            android:text="Jenis Surat    : "
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_output_nosurat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/txt_item_surat_admin_nosurat"
+            android:gravity="center|left"
+            android:text="Nomor Surat"
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_output_nama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_admin_output_nosurat"
+            android:layout_toRightOf="@+id/txt_item_surat_admin_nama"
+            android:gravity="center|left"
+            android:text="Nama Pengaju Surat"
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_output_nik"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_admin_output_nama"
+            android:layout_toRightOf="@+id/txt_item_surat_admin_nik"
+            android:gravity="center|left"
+            android:text="NIK Pengaju"
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_surat_admin_output_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_item_surat_admin_output_nik"
+            android:layout_toRightOf="@+id/txt_item_surat_admin_jenis"
+            android:gravity="center|left"
+            android:text="Jenis Surat"
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

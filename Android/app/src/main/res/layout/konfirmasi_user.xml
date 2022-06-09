@@ -7,108 +7,97 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_judul_konfirmasi_user"
+        android:id="@+id/txt_konfirmasi_user_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:text="Terkonfirmasi"
         android:textColor="@color/white"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_konfirmasi_user_bg"
         android:layout_width="240dp"
         android:layout_height="160dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintEnd_toEndOf="@+id/text_judul_konfirmasi_user"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/text_judul_konfirmasi_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_judul_konfirmasi_user"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_konfirmasi_user_judul"
+        app:layout_constraintStart_toStartOf="@+id/txt_konfirmasi_user_judul"
+        app:layout_constraintTop_toBottomOf="@+id/txt_konfirmasi_user_judul"
         app:srcCompat="@drawable/button_white" />
 
     <TextView
-        android:id="@+id/text_foto_persyaratan_user"
+        android:id="@+id/txt_konfirmasi_user"
         android:layout_width="240dp"
         android:layout_height="120dp"
         android:text="Perminaan anda sedang kami proses dalam maksimal 2 x 24 jam mohon cek status surat pada menu Beranda"
         android:textAlignment="center"
         android:textColor="@color/theme"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/img_konfirmasi_user_bg"
+        app:layout_constraintEnd_toEndOf="@+id/img_konfirmasi_user_bg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/img_konfirmasi_user_bg"
+        app:layout_constraintTop_toTopOf="@+id/img_konfirmasi_user_bg"
         app:layout_constraintVertical_bias="0.45" />
 
     <TextView
-        android:id="@+id/text_catatan_persyaratan_user"
+        android:id="@+id/txt_konfirmasi_user_catatan"
         android:layout_width="250dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:text="Catatan:"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/img_konfirmasi_user_bg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/img_konfirmasi_user_bg"
+        app:layout_constraintTop_toBottomOf="@+id/img_konfirmasi_user_bg" />
 
     <TextView
-        android:id="@+id/text_catatan1_persyaratan_user"
+        android:id="@+id/txt_konfirmasi_user_catatan1"
         android:layout_width="250dp"
         android:layout_height="0dp"
         android:layout_marginTop="0dp"
         android:text="1. Surat dapat diambil ketika status surat ceklis hijau"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_catatan_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/txt_konfirmasi_user_catatan"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_catatan_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_catatan_persyaratan_user" />
+        app:layout_constraintStart_toStartOf="@+id/txt_konfirmasi_user_catatan"
+        app:layout_constraintTop_toBottomOf="@+id/txt_konfirmasi_user_catatan" />
 
     <TextView
-        android:id="@+id/text_catatan2_persyaratan_user"
+        android:id="@+id/txt_konfirmasi_user_catatan2"
         android:layout_width="250dp"
         android:layout_height="0dp"
         android:layout_marginTop="0dp"
         android:text="2. Surat dapat diambil di Desa xxxx"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_catatan1_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/txt_konfirmasi_user_catatan1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_catatan1_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_catatan1_persyaratan_user" />
+        app:layout_constraintStart_toStartOf="@+id/txt_konfirmasi_user_catatan1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_konfirmasi_user_catatan1" />
 
     <TextView
-        android:id="@+id/text_catatan3_persyaratan_user"
+        android:id="@+id/txt_konfirmasi_user_catatan3"
         android:layout_width="250dp"
         android:layout_height="0dp"
         android:layout_marginTop="0dp"
         android:text="3. Pengambilan Surat pada pukul 08.00 s.d. 16.00 WIB"
         android:textColor="@color/white"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_catatan2_persyaratan_user"
+        app:layout_constraintEnd_toEndOf="@+id/txt_konfirmasi_user_catatan2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_catatan2_persyaratan_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_catatan2_persyaratan_user" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="theme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintStart_toStartOf="@+id/txt_konfirmasi_user_catatan2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_konfirmasi_user_catatan2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_login3"
+        android:id="@+id/btn_konfirmasi"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
@@ -118,9 +107,9 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/img_konfirmasi_user_bg"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/img_konfirmasi_user_bg" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

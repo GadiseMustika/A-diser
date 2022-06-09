@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/theme">
+    android:background="@color/theme"
+    android:id="@+id/container">
 
     <TextView
-        android:id="@+id/text_detail_penduduk_admin"
+        android:id="@+id/txt_detail_penduduk_admin_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -19,195 +21,200 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/image_profil_user"
+        android:id="@+id/img_detail_penduduk_admin"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/text_detail_penduduk_admin"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detail_penduduk_admin_judul"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/text_detail_penduduk_admin"
-        app:layout_constraintTop_toBottomOf="@+id/text_detail_penduduk_admin"
+        app:layout_constraintStart_toStartOf="@+id/txt_detail_penduduk_admin_judul"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_judul"
         app:srcCompat="@drawable/ic_baseline_account_circle_white_24" />
 
     <TextView
-        android:id="@+id/text_nik_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
         android:text="NIK                                 :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_profil_user" />
+        app:layout_constraintTop_toBottomOf="@+id/img_detail_penduduk_admin" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nik_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
-        android:hint="@string/nik_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:inputType="textPersonName"
+        android:text="NIK"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_nik_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/image_profil_user"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_nik"
+        app:layout_constraintTop_toBottomOf="@+id/img_detail_penduduk_admin"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_nama_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="12dp"
         android:text="Nama                            :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_nik_detail_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_nik" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nama_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="0dp"
-        android:hint="@string/nama_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPersonName"
+        android:text="Billy Bumblebee Sifulan"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_nama_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nik_detail_admin"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_nama"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_penduduk_admin_nik"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_ttl_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_ttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="12dp"
         android:text="TTL                                :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_nama_detail_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_nama" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_ttl_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:hint="@string/ttl_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_ttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPersonName"
+        android:text="@string/ttl_detail_admin"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_ttl_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nama_detail_admin"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_ttl"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_penduduk_admin_nama"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_jk_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="0dp"
-        android:text="Jenis Kelamin             :"
+        android:layout_marginTop="12dp"
+        android:text="Jenis Kelamin              :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_ttl_detail_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_ttl" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_jk_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:hint="@string/jk_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPersonName"
+        android:text="@string/jk_detail_admin"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_jk_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/edit_ttl_detail_admin"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_jk"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_penduduk_admin_ttl"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_agama_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_agama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="12dp"
         android:text="Agama                          :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_jk_detail_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_jk" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_agama_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:hint="@string/agama_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_agama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPersonName"
+        android:text="@string/agama_detail_admin"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_agama_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/edit_jk_detail_admin"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_agama"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_penduduk_admin_jk"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_pekerjaan_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="12dp"
         android:text="Pekerjaan                     :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_agama_detail_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_agama" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_pekerjaan_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:hint="@string/pekerjaan_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPersonName"
+        android:text="@string/pekerjaan_detail_admin"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_pekerjaan_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/edit_agama_detail_admin"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_pekerjaan"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_penduduk_admin_agama"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/text_warga_detail_admin"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:id="@+id/txt_detail_penduduk_admin_warga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="12dp"
         android:text="Kewarganegaraan      :"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pekerjaan_detail_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_penduduk_admin_pekerjaan" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_warga_detail_admin"
-        android:layout_width="175dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:hint="@string/warga_detail_admin"
+    <TextView
+        android:id="@+id/edit_detail_penduduk_admin_warga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPersonName"
+        android:text="@string/warga_detail_admin"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/text_warga_detail_admin"
-        app:layout_constraintTop_toBottomOf="@+id/edit_pekerjaan_detail_admin"
+        app:layout_constraintStart_toEndOf="@+id/txt_detail_penduduk_admin_warga"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_penduduk_admin_pekerjaan"
         tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_edit_penduduk_admin"
+        android:id="@+id/btn_detail_penduduk_admin_edit"
         android:layout_width="150dp"
         android:layout_height="44dp"
         android:layout_marginBottom="24dp"
@@ -221,18 +228,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="theme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btn_detail_penduduk_admin_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -240,6 +236,7 @@
         android:background="@color/theme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_delete_24" />
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

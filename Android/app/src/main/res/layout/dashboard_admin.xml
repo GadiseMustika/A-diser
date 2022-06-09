@@ -7,7 +7,7 @@
     android:background="@color/theme">
 
     <TextView
-        android:id="@+id/text_dashboard_admin"
+        android:id="@+id/txt_dashboard_admin_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -19,108 +19,106 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/image_tpenduduk_admin"
+        android:id="@+id/img_dashboard_admin_tpenduduk"
         android:layout_width="200dp"
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/text_dashboard_admin"
+        app:layout_constraintEnd_toEndOf="@+id/txt_dashboard_admin_judul"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/text_dashboard_admin"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard_admin"
+        app:layout_constraintStart_toStartOf="@+id/txt_dashboard_admin_judul"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dashboard_admin_judul"
         app:srcCompat="@drawable/button_sub" />
 
     <TextView
-        android:id="@+id/text_tpenduduk_admin"
+        android:id="@+id/txt_dashboard_admin_tpenduduk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Penduduk"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintEnd_toEndOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintHorizontal_bias="0.757"
-        app:layout_constraintStart_toStartOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintTop_toTopOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintTop_toTopOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintVertical_bias="0.38" />
 
     <ImageView
-        android:id="@+id/image_acc_admin"
+        android:id="@+id/img_dashboard_admin_acc"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintEnd_toEndOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintTop_toTopOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintTop_toTopOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintVertical_bias="0.458"
         app:srcCompat="@drawable/ic_baseline_supervisor_account_24" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_tpenduduk_user"
+    <TextView
+        android:id="@+id/edit_dashboard_admin_tpenduduk"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:hint="@string/tpenduduk_admin"
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintEnd_toEndOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintTop_toTopOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintTop_toTopOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintVertical_bias="0.725"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/image_surat_admin"
+        android:id="@+id/img_dashboard_admin_tsurat"
         android:layout_width="200dp"
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tpenduduk"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/image_tpenduduk_admin"
-        app:layout_constraintTop_toBottomOf="@+id/image_tpenduduk_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tpenduduk"
+        app:layout_constraintTop_toBottomOf="@+id/img_dashboard_admin_tpenduduk"
         app:srcCompat="@drawable/button_sub" />
 
     <TextView
-        android:id="@+id/text_surat_admin"
+        android:id="@+id/txt_dashboard_admin_tsurat"
         android:layout_width="104dp"
         android:layout_height="57dp"
         android:text="Surat Permohonan Yang Masuk"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_surat_admin"
-        app:layout_constraintEnd_toEndOf="@+id/image_surat_admin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_dashboard_admin_tsurat"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tsurat"
         app:layout_constraintHorizontal_bias="0.76"
-        app:layout_constraintStart_toStartOf="@+id/image_surat_admin"
-        app:layout_constraintTop_toTopOf="@+id/image_surat_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tsurat"
+        app:layout_constraintTop_toTopOf="@+id/img_dashboard_admin_tsurat"
         app:layout_constraintVertical_bias="0.19" />
 
     <ImageView
-        android:id="@+id/image_acc2_admin"
+        android:id="@+id/img_dashboard_admin_file"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_surat_admin"
-        app:layout_constraintEnd_toEndOf="@+id/image_surat_admin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_dashboard_admin_tsurat"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tsurat"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/image_surat_admin"
-        app:layout_constraintTop_toTopOf="@+id/image_surat_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tsurat"
+        app:layout_constraintTop_toTopOf="@+id/img_dashboard_admin_tsurat"
         app:layout_constraintVertical_bias="0.458"
         app:srcCompat="@drawable/ic_baseline_insert_drive_file_white_24" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_surat_admin"
+    <TextView
+        android:id="@+id/edit_dashboard_admin_tsurat"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:hint="@string/surat_admin"
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_surat_admin"
-        app:layout_constraintEnd_toEndOf="@+id/image_surat_admin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_dashboard_admin_tsurat"
+        app:layout_constraintEnd_toEndOf="@+id/img_dashboard_admin_tsurat"
         app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="@+id/image_surat_admin"
-        app:layout_constraintTop_toTopOf="@+id/image_surat_admin"
+        app:layout_constraintStart_toStartOf="@+id/img_dashboard_admin_tsurat"
+        app:layout_constraintTop_toTopOf="@+id/img_dashboard_admin_tsurat"
         app:layout_constraintVertical_bias="0.862"
         tools:ignore="TouchTargetSizeCheck" />
 

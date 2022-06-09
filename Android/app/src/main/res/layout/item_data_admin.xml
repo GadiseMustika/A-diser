@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/theme">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_data_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/img_item_data_admin"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/txt_item_data_nama"
+            android:layout_toRightOf="@id/img_item_data_admin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Nama User"
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_item_data_nik"
+            android:layout_toRightOf="@id/img_item_data_admin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_item_data_nama"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="NIK User"
+            android:textColor="@color/theme"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

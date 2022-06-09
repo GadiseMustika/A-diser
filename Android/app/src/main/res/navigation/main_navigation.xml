@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.adiser.mainActivity.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/dashboard_user">
+        <action
+            android:id="@+id/action_dashboardFragment_to_layananFragment"
+            app:destination="@id/layananFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_profilFragment"
+            app:destination="@id/profilFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/layananFragment"
+        android:name="com.example.adiser.mainActivity.LayananFragment"
+        android:label="fragment_layanan"
+        tools:layout="@layout/layanan_user">
+        <action
+            android:id="@+id/action_layananFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_layananFragment_to_profilFragment"
+            app:destination="@id/profilFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+        <action
+            android:id="@+id/action_layananFragment_to_persyaratanFragment"
+            app:destination="@id/persyaratanFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.adiser.mainActivity.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/profil_user">
+        <action
+            android:id="@+id/action_profilFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_profilFragment_to_layananFragment"
+            app:destination="@id/layananFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/persyaratanFragment"
+        android:name="com.example.adiser.mainActivity.PersyaratanFragment"
+        android:label="fragment_persyaratan"
+        tools:layout="@layout/persyaratan_user">
+        <action
+            android:id="@+id/action_persyaratanFragment_to_konfirmasiFragment"
+            app:destination="@id/konfirmasiFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/konfirmasiFragment"
+        android:name="com.example.adiser.mainActivity.KonfirmasiFragment"
+        android:label="fragment_konfirmasi"
+        tools:layout="@layout/konfirmasi_user">
+        <action
+            android:id="@+id/action_konfirmasiFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/enter"
+            app:popExitAnim="@anim/exit" />
+    </fragment>
+
+</navigation>

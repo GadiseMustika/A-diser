@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/theme">
+    android:background="@color/theme"
+    android:id="@+id/container">
 
     <TextView
-        android:id="@+id/text_edit_penduduk_admin"
+        android:id="@+id/txt_detail_surat_admin_judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Detail Surat Pengajuan"
+        android:text="Detail Surat"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,63 +20,59 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_nomor_surat_user"
+        android:id="@+id/txt_detail_surat_admin_noSurat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
-        android:text="Nama"
+        android:text="Nomor Surat"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_edit_penduduk_admin" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_surat_admin_judul" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nomor_surat_user"
+    <TextView
+        android:id="@+id/edit_detail_surat_admin_noSurat"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/form"
-        android:hint="@string/nama_profil_user"
-        android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_nomor_surat_user"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detail_surat_admin_noSurat"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_nomor_surat_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_nomor_surat_user"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="@+id/txt_detail_surat_admin_noSurat"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_surat_admin_noSurat" />
 
     <TextView
-        android:id="@+id/text_nik_surat_user"
+        android:id="@+id/txt_detail_surat_admin_jenis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="12dp"
-        android:text="Email"
+        android:text="Jenis Surat"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nomor_surat_user" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_surat_admin_noSurat" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nik_surat_user"
+    <TextView
+        android:id="@+id/edit_detail_surat_admin_jenis"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/form"
-        android:hint="@string/email_profil_user"
-        android:inputType="textPersonName"
+        android:gravity="left|center_vertical"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_nik_surat_user"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_detail_surat_admin_noSurat"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_nik_surat_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_nik_surat_user"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="@+id/edit_detail_surat_admin_noSurat"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_surat_admin_jenis" />
 
     <TextView
-        android:id="@+id/text_nama_surat_user"
+        android:id="@+id/txt_detail_surat_admin_nik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -84,26 +81,76 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nik_surat_user" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_surat_admin_jenis" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nama_surat_user"
+    <TextView
+        android:id="@+id/edit_detail_surat_admin_nik"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/form"
-        android:hint="@string/nik_profil_user"
-        android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_nama_surat_user"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detail_surat_admin_nik"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_nama_surat_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_nama_surat_user"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="@+id/txt_detail_surat_admin_nik"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_surat_admin_nik" />
+
+    <TextView
+        android:id="@+id/txt_detail_surat_admin_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Nama"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_surat_admin_nik" />
+
+    <TextView
+        android:id="@+id/edit_detail_surat_admin_nama"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_detail_surat_admin_nik"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_detail_surat_admin_nik"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_surat_admin_nama" />
+
+    <TextView
+        android:id="@+id/txt_detail_surat_admin_tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Tanggal Pengajuan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_surat_admin_nama" />
+
+    <TextView
+        android:id="@+id/edit_detail_surat_admin_tgl"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/form"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_detail_surat_admin_nama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_detail_surat_admin_nama"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detail_surat_admin_tgl" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_edit_penduduk_admin"
+        android:id="@+id/btn_detail_surat_admin_simpan"
         android:layout_width="150dp"
         android:layout_height="44dp"
         android:layout_marginBottom="16dp"
@@ -116,16 +163,30 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <Spinner
+        android:id="@+id/spinner_surat"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/edit_detail_surat_admin_tgl"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="@+id/txt_detail_surat_admin_tgl"
+        app:layout_constraintTop_toBottomOf="@+id/edit_detail_surat_admin_tgl"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_detail_surat_admin_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:background="theme"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="16dp"
+        android:background="@color/theme"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

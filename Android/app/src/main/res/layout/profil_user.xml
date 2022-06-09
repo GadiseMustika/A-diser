@@ -8,10 +8,10 @@
 
 
     <ImageView
-        android:id="@+id/image_profil_user"
+        android:id="@+id/img_profil_user"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,18 +19,18 @@
         app:srcCompat="@drawable/ic_baseline_account_circle_white_24" />
 
     <TextView
-        android:id="@+id/text_profil_user"
+        android:id="@+id/txt_profil_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User"
         android:textColor="@color/white"
         android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="@+id/image_profil_user"
-        app:layout_constraintStart_toStartOf="@+id/image_profil_user"
-        app:layout_constraintTop_toBottomOf="@+id/image_profil_user" />
+        app:layout_constraintEnd_toEndOf="@+id/img_profil_user"
+        app:layout_constraintStart_toStartOf="@+id/img_profil_user"
+        app:layout_constraintTop_toBottomOf="@+id/img_profil_user" />
 
     <TextView
-        android:id="@+id/text_nama_profil_user"
+        android:id="@+id/txt_profil_user_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -39,27 +39,25 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_profil_user" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_profil_user" />
 
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nama_profil_user"
+    <TextView
+        android:id="@+id/edit_profil_user_nama"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/form"
-        android:hint="@string/nama_profil_user"
-        android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_nama_profil_user"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_profil_user_nama"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_nama_profil_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_nama_profil_user"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="@+id/txt_profil_user_nama"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profil_user_nama" />
 
     <TextView
-        android:id="@+id/text_email_profil_user"
+        android:id="@+id/txt_profil_user_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -68,26 +66,24 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_nama_profil_user" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_profil_user_nama" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_email_profil_user"
+    <TextView
+        android:id="@+id/edit_profil_user_email"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/form"
-        android:hint="@string/email_profil_user"
-        android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_email_profil_user"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_profil_user_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_email_profil_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_email_profil_user"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="@+id/txt_profil_user_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profil_user_email" />
 
     <TextView
-        android:id="@+id/text_nik_profil_user"
+        android:id="@+id/txt_profil_user_nik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -96,23 +92,21 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email_profil_user" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_profil_user_email" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_nik_profil_user"
+    <TextView
+        android:id="@+id/edit_profil_user_nik"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/form"
-        android:hint="@string/nik_profil_user"
-        android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/text_nik_profil_user"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_profil_user_nik"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_nik_profil_user"
-        app:layout_constraintTop_toBottomOf="@+id/text_nik_profil_user"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintStart_toStartOf="@+id/txt_profil_user_nik"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profil_user_nik" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/menu_bawah"
