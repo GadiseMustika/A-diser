@@ -6,6 +6,8 @@ admin.initializeApp({
   databaseURL: "https://adiser-default-rtdb.firebaseio.com"
 });
 const db = admin.firestore();
+db.settings({ ignoreUndefinedProperties: true });
 // const dissconect = ref(db, "jaringan dinonaktif");
 const Verifikasi = db.collection('verifikasi-ktp');
-module.exports = Verifikasi;
+const Surat= db.collection('surat');
+module.exports = {Verifikasi,Surat};
