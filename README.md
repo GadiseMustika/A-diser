@@ -1,10 +1,11 @@
 # A-diser
+![cover](cover.png)
 ### Automatic District Service Application
 ##### CC22-PC417 Bangkit Academy 2022
 ##### Team: 
-1.M2006F0591 - Muhammad Salman Ikrar Musyaffa - Universitas Brawijaya
-2.M2313G2715 - Irena Kusuma Dewi - Universitas Siliwangi
-3.C7307F2631 - Gadis Mustika  - Universitas Raharja
+1.M2006F0591 - Muhammad Salman Ikrar Musyaffa - Universitas Brawijaya <br>
+2.M2313G2715 - Irena Kusuma Dewi - Universitas Siliwangi <br>
+3.C7307F2631 - Gadis Mustika  - Universitas Raharja<br>
 
 ***
 #### Introduction 
