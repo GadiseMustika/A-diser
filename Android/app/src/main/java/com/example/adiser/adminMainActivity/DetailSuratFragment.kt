@@ -20,7 +20,17 @@ class DetailSuratFragment : Fragment() {
     private var _binding: DetailSuratAdminBinding? = null
     private val binding get() = _binding!!
     private var category = ""
+    private var idSurat = ""
     private var noSurat = ""
+    private var nikSurat = ""
+    private var namaSurat = ""
+    private var jenisSurat = ""
+    private var tglSurat = ""
+    private var statusSurat = ""
+    private var ktpSurat = ""
+    private var latarSurat = ""
+    private var aktaSurat = ""
+    private var kkSurat = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,19 +70,25 @@ class DetailSuratFragment : Fragment() {
         binding.editDetailSuratAdminJenis.keyListener = null
         binding.editDetailSuratAdminTgl.keyListener = null
 
+        idSurat = arguments?.getString(Constants.SURAT_ID).toString()
         noSurat = arguments?.getString(Constants.SURAT_NOMOR).toString()
-        var nik = arguments?.getString(Constants.SURAT_NIK)
-        var nama = arguments?.getString(Constants.SURAT_NAMA)
-        var jenis = arguments?.getString(Constants.SURAT_JENIS)
-        var tgl= arguments?.getString(Constants.SURAT_TGL)
+        nikSurat = arguments?.getString(Constants.SURAT_NIK).toString()
+        namaSurat= arguments?.getString(Constants.SURAT_NAMA).toString()
+        jenisSurat = arguments?.getString(Constants.SURAT_JENIS).toString()
+        tglSurat = arguments?.getString(Constants.SURAT_TGL).toString()
+        statusSurat = arguments?.getString(Constants.SURAT_STATUS).toString()
+        ktpSurat = arguments?.getString(Constants.SURAT_FKTP).toString()
+        latarSurat = arguments?.getString(Constants.SURAT_FLATAR).toString()
+        aktaSurat = arguments?.getString(Constants.SURAT_FAKTA).toString()
+        kkSurat = arguments?.getString(Constants.SURAT_FKK).toString()
 
 
         with(binding) {
             editDetailSuratAdminNoSurat.setText(noSurat)
-            editDetailSuratAdminNik.setText(nik)
-            editDetailSuratAdminNama.setText(nama)
-            editDetailSuratAdminJenis.setText(jenis)
-            editDetailSuratAdminTgl.setText(tgl)
+            editDetailSuratAdminNik.setText(nikSurat)
+            editDetailSuratAdminNama.setText(namaSurat)
+            editDetailSuratAdminJenis.setText(jenisSurat)
+            editDetailSuratAdminTgl.setText(tglSurat)
         }
 
         binding.btnDetailSuratAdminDelete.setOnClickListener {
@@ -105,7 +121,17 @@ class DetailSuratFragment : Fragment() {
             .child(noSurat)
 
         val value = SuratModel(
+            suratId = idSurat,
+            suratNomor = noSurat,
+            suratNik = nikSurat,
+            suratNama = namaSurat,
+            suratJenis = jenisSurat,
+            suratTglPermohonan = tglSurat,
             suratStatus = category,
+            suratFotoKTP = ktpSurat,
+            suratFotoLatar = latarSurat,
+            suratFotoAkta = aktaSurat,
+            suratFotoKK = kkSurat
         )
 
         reference.setValue(value).addOnCompleteListener {

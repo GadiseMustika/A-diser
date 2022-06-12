@@ -2,12 +2,14 @@ package com.example.adiser.authentication
 
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.chaquo.python.Python
 import com.example.adiser.Constants
 import com.example.adiser.R
 import com.example.adiser.databinding.RegisterUploadBinding
@@ -34,10 +36,12 @@ class UploadRegisterFragment : Fragment() {
         idOCR = getRandomString(10)
         binding.btnRegUploadKtp.setOnClickListener {
             getResultImage.launch("image/*")
+
         }
 
-        binding.btnRegUploadLanjut.setOnClickListener{
+        binding.btnRegUploadLanjut.setOnClickListener {
             uploadPicture(uriImage)
+
         }
 
         return binding.root
@@ -92,4 +96,11 @@ class UploadRegisterFragment : Fragment() {
             sb.append(ALLOWED_CHARACTERS[random.nextInt(ALLOWED_CHARACTERS.length)])
         return sb.toString()
     }
+
+    private fun getOcr(uriImage: String): String {
+        val python = Python.getInstance()
+        val pythonFile = python.getModule("main")
+        return pythonFile.callAttr("ocr", uriImage).toString()
+    }
+
 }
